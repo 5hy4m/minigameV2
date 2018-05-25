@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{% extends "mini_app/base.html" %}
+{% block bodylower%}
+
+
+<form method="post">
+	{{ form.as_p }}
+  {% csrf_token %}
+	<input class="btn btn-primary" type="Submit" value="Submit">
+</form>
+{% endblock %}

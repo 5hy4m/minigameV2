@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% extends 'mini_app/base.html' %}
+{% load staticfiles %}
+
+{% block bodylower %}
+    <!-- Main Content -->
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="{% url 'mini_app:tictactoe' %}"><img class="card-img-top" src="http://rangrezz.chitkara.edu.in/fun/tic%20tac%20toe.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{% url 'mini_app:tictactoe' %}">TicTacToe</a>
+              </h4>
+              <p class="card-text">Tic-tac-toe is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="{% url 'mini_app:fingercut' %}"><img class="card-img-top" src="{% static 'images/fingercut.jpg' %}" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{% url 'mini_app:fingercut' %}">Finger Cut</a>
+              </h4>
+              <p class="card-text">Play: screen "GO" instruction, remove the finger, in advance or delay the off will fail!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="{% url 'mini_app:snakeattack' %}"><img class="card-img-top" src="{% static 'images/snakeattack.jpg' %}" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{% url 'mini_app:snakeattack' %}">Snake Attack</a>
+              </h4>
+              <p class="card-text">This hungry snake is in a garden filled with tons of yummy types of ... Can you help him stay alive for as long as possible in this cute action game!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="{% url 'mini_app:orbitshooter' %}"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn5HAgz12zXmSSTWL-nzu5TbgylOckN1alEnV71xppf6tf9mPYBA" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{% url 'mini_app:orbitshooter' %}">Orbit Shooter</a>
+              </h4>
+              <p class="card-text">Shooter games are a subgenre of action game, which often test the player's speed and reaction time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="{% url 'mini_app:archery' %}"><img class="card-img-top" src="https://i.pinimg.com/originals/a0/02/d5/a002d5a441e5effbf0c73e7328de69c7.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{% url 'mini_app:archery' %}">Archery</a>
+              </h4>
+              <p class="card-text">Show off your skills with a bow and arrow, perfect your aim, and become a pro marksman</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="{% url 'mini_app:light_game' %}"><img class="card-img-top hoverable" src="{% static 'images/bulb.jpg' %}" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{% url 'mini_app:light_game' %}">Turn On The Light</a>
+              </h4>
+              <p class ="card-text">The board shown on the left is wired on the underside so that holding contact points A and B together turns the light on</p>
+
+{% endblock %}
